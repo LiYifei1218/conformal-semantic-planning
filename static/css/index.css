@@ -751,3 +751,132 @@ a:focus {
 
 
 
+
+/* ---- Project page content additions ---- */
+.contribution-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 40rem;
+}
+
+.contribution-list li {
+  position: relative;
+  padding: 0.65rem 0 0.65rem 1.75rem;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-color);
+  text-align: left;
+  line-height: 1.5;
+}
+
+.contribution-list li:last-child {
+  border-bottom: none;
+}
+
+.contribution-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 1.05rem;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: var(--primary-color);
+}
+
+.project-figure {
+  margin: 1.5rem 0 0;
+  text-align: center;
+}
+
+.project-figure img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+  background: #fff;
+}
+
+.project-figure figcaption {
+  margin-top: 0.85rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: center;
+  padding: 0 0.5rem;
+}
+
+.results-table {
+  font-size: 0.92rem;
+  background: #fff;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.results-table th {
+  background: var(--background-accent);
+  color: var(--text-primary);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.results-table td,
+.results-table th {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.results-table td:first-child,
+.results-table th:first-child {
+  text-align: left;
+  font-weight: 500;
+}
+
+.poster-link {
+  display: inline-block;
+  max-width: 100%;
+  transition: var(--transition);
+}
+
+.poster-link:hover {
+  transform: translateY(-2px);
+}
+
+.poster-preview {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-color);
+  background: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-body {
+    padding: 2.5rem 1rem;
+  }
+
+  .publication-title {
+    font-size: 1.75rem !important;
+  }
+
+  .results-table {
+    font-size: 0.78rem;
+  }
+
+  .results-table td,
+  .results-table th {
+    padding: 0.4rem 0.35rem;
+  }
+
+  .poster-preview {
+    max-width: 100%;
+  }
+
+  .contribution-list {
+    max-width: 100%;
+  }
+}
